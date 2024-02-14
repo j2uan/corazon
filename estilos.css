@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family-tangerine");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    font-size: 36vw;
+    color: rgb(5, 5, 5);
+    animation: 4s ease infinite corazon;
+    text-shadow: 4px 3px 20px rgba(255, 22, 22, 0.669);
+}
+
+.container .contenido{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #f805e4;
+    text-align: center;
+    font-family: "tangerine", serif;
+}
+
+.container .contenido h1{
+    font-size: 4vw;
+}
+.container .contenido p{
+    font-size: 3vw;
+}
+
+@keyframes corazon{
+    50%{
+        transform: scale(1.6);
+    }
+}
